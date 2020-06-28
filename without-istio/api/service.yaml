@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: greeting-service
+  namespace: api
+spec:
+  selector:
+    app: greeting-app
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+#  type: ClusterIP
+  type: NodePort
+#  type: LoadBalancer

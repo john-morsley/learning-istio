@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: gateway
+#  namespace: api
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - hosts:
+#        - '*'
+        - 'httpbin.dev'
+      port:
+        name: httpbin-dev
+        number: 80        
+        protocol: HTTP

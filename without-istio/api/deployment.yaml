@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greeting-deployment
+  namespace: api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: greeting-app
+  template:
+    metadata:
+      labels:
+        app: greeting-app
+    spec:
+      containers:
+        - name: greeting-container
+          image: johnmorsley/greeting-api:v1
+          ports:
+            - containerPort: 5000
+              hostPort: 5000
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
