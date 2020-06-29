@@ -5,7 +5,7 @@ metadata:
   name: greeting-virtual-service  
 spec:
   hosts:
-    - 'morsley.io'
+    - 'morsley.uk'
   gateways:
     - istio-gateway
   http:

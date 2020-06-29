@@ -3,7 +3,7 @@
 Download your 'Kubeconfig' file.
 
 ```bash
-export KUBECONFIG=~/Downloads/john-morsley-kubeconfig.yaml
+export KUBECONFIG=~/Downloads/john-morsley-istio-kubeconfig.yaml
 ```
 
 Download Istio:

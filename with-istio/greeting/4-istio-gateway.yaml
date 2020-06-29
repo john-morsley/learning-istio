@@ -12,4 +12,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - 'morsley.io'
+        - 'morsley.uk'

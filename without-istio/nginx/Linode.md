@@ -5,7 +5,7 @@
 Download your 'Kubeconfig' file.
 
 ```bash
-export KUBECONFIG=~/Downloads/john-morsley-kubeconfig.yaml
+export KUBECONFIG=~/Downloads/john-morsley-nginx-kubeconfig.yaml
 ```
 
 We will install this via Helm.
